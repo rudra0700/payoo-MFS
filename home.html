@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/home.js" defer></script>
     <script src="./js/cashout.js" defer></script>
+    <script src="./js/features.js" defer></script>
 </head>
 <body>
     <main class="flex justify-center">
@@ -21,11 +22,11 @@
               </div>
               <div class="divider"></div>
               <div class="flex justify-center gap-4">
-                <button class="btn">Add money</button>
-                <button class="btn">Cashout</button>
+                <button class="btn" id="show-add-money-btn">Add money</button>
+                <button class="btn" id="show-cashout-btn" >Cashout</button>
               </div>
               <div class="divider"></div>
-              <form class="card-body">
+              <form class="card-body" id="add-money-form">
                 <div class="form-control">
                   <label class="label">
                     <span class="label-text">Amount</span>
@@ -43,7 +44,7 @@
                 </div>
               </form>
 
-              <form class="card-body">
+              <form class="hidden card-body" id="cashout-form">
                 <div class="form-control">
                   <label class="label">
                     <span class="label-text">Amount</span>
