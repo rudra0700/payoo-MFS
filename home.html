@@ -6,7 +6,7 @@
     <title>Welcome to payoo MFS</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./js/home.js"></script>
+    <script src="./js/home.js" defer></script>
 </head>
 <body>
     <main class="flex justify-center">
@@ -14,7 +14,8 @@
 
               <div class="stats shadow">
                 <div class="stat">
-                  <div class="stat-value">89,400</div>
+                  <div class="stat-value" id="current-balance">9400</div>
+                  <p class="">Available balance</p>
                 </div>
               </div>
               <div class="divider"></div>
@@ -28,16 +29,16 @@
                   <label class="label">
                     <span class="label-text">Amount</span>
                   </label>
-                  <input type="text" placeholder="amount" class="input input-bordered" required />
+                  <input type="text" placeholder="amount" class="input input-bordered" id="add-money-input" required />
                 </div>
                 <div class="form-control">
                   <label class="label">
                     <span class="label-text">Pin</span>
                   </label>
-                  <input type="password" placeholder="pin" class="input input-bordered" required />
+                  <input type="password" placeholder="pin" class="input input-bordered" id="pin-input" required />
                 </div>
                 <div class="form-control mt-6">
-                  <button class="btn btn-primary">Add Money</button>
+                  <button class="btn btn-primary" id="add-money-btn">Add Money</button>
                 </div>
               </form>
         </div>
