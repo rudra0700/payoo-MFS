@@ -7,10 +7,10 @@ document.getElementById("add-money-btn").addEventListener("click", (event) => {
 
   if (pinInput === "1234") {
     alert("add money in your accout");
+    const newBalance = parseFloat(currentBalance) + parseFloat(addMoneyInput);
+    document.getElementById("current-balance").innerText = newBalance;
   } else {
     alert("failed to add money");
   }
 
-  const newBalance = parseFloat(currentBalance) + parseFloat(addMoneyInput);
-  document.getElementById("current-balance").innerText = newBalance;
 });

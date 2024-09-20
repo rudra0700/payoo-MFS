@@ -7,10 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/home.js" defer></script>
+    <script src="./js/cashout.js" defer></script>
 </head>
 <body>
     <main class="flex justify-center">
-        <div class="artboard phone-3 border">
+        <div class="artboard phone-3 border overflow-auto">
 
               <div class="stats shadow">
                 <div class="stat">
@@ -39,6 +40,24 @@
                 </div>
                 <div class="form-control mt-6">
                   <button class="btn btn-primary" id="add-money-btn">Add Money</button>
+                </div>
+              </form>
+
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input type="text" placeholder="cashout amount" class="input input-bordered" id="cashout-input" required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin</span>
+                  </label>
+                  <input type="password" placeholder="pin" class="input input-bordered" id="cashout-pin-input" required />
+                </div>
+                <div class="form-control mt-6">
+                  <button class="btn btn-primary" id="cashout-btn">Cash Out</button>
                 </div>
               </form>
         </div>
